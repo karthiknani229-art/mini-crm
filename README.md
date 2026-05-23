@@ -1,63 +1,33 @@
 # Lead Management CRM
 
-A full-stack Lead Management System (Mini CRM) built using React, Node.js, Express, and PostgreSQL.  
-This application allows users to manage leads efficiently with CRUD operations, dashboard statistics, and search functionality.
-
----
+A full-stack Lead Management System (Mini CRM) built using React, Node.js, Express, and PostgreSQL. Manage leads efficiently with CRUD operations, dashboard statistics, and search functionality.
 
 ## Live Demo
 
-Frontend:  
-https://mini-crm-pi-woad.vercel.app/
-
-Backend API:  
-https://mini-crm-seg2.onrender.com/
-
----
-
-## GitHub Repository
-
-https://github.com/karthiknani229-art/mini-crm
-
----
+- Frontend: https://mini-crm-pi-woad.vercel.app/
+- Backend API: https://mini-crm-seg2.onrender.com/
 
 ## Tech Stack
 
-### Frontend
-- React.js
-- Vite
-- CSS
+**Frontend:** React.js, Vite, CSS
 
-### Backend
-- Node.js
-- Express.js
+**Backend:** Node.js, Express.js
 
-### Database
-- PostgreSQL (Neon DB)
+**Database:** PostgreSQL (Neon DB)
 
-### Deployment
-- Vercel (Frontend)
-- Render (Backend)
-
----
+**Deployment:** Vercel (Frontend), Render (Backend)
 
 ## Features
 
-- Add Leads
-- View Leads
-- Update Lead Status
-- Delete Leads
-- Search Leads
-- Dashboard Statistics
-- PostgreSQL Database Integration
+- Add, update, and delete leads
+- Search leads by name or status
+- Update lead status (Interested / Not Interested / Converted)
+- Dashboard statistics overview
+- PostgreSQL database integration
 - Responsive UI
-- REST API Integration
-
----
+- REST API integration
 
 ## Project Structure
-
-```txt
 mini-crm/
 │
 ├── client/
@@ -75,33 +45,15 @@ mini-crm/
 │   └── .env.example
 │
 └── README.md
-```
-
----
-
 ## API Endpoints
 
-### Get All Leads
-```http
-GET /api/leads
-```
-
-### Add Lead
-```http
-POST /api/leads
-```
-
-### Update Lead Status
-```http
-PUT /api/leads/:id
-```
-
-### Delete Lead
-```http
-DELETE /api/leads/:id
-```
-
----
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | /api/leads | Get all leads |
+| GET | /api/leads?search= | Search leads |
+| POST | /api/leads | Add new lead |
+| PUT | /api/leads/:id | Update lead status |
+| DELETE | /api/leads/:id | Delete lead |
 
 ## Database Schema
 
@@ -116,19 +68,16 @@ CREATE TABLE leads (
 );
 ```
 
----
-
 ## Local Setup
 
-### Clone Repository
+**1. Clone the repository**
 
 ```bash
 git clone https://github.com/karthiknani229-art/mini-crm.git
+cd mini-crm
 ```
 
----
-
-## Backend Setup
+**2. Backend setup**
 
 ```bash
 cd server
@@ -136,16 +85,11 @@ npm install
 npm run dev
 ```
 
-Create `.env` file:
-
-```env
+Create a `.env` file inside `/server`:
 PORT=5000
 DATABASE_URL=your_postgresql_connection_string
-```
 
----
-
-## Frontend Setup
+**3. Frontend setup**
 
 ```bash
 cd client
@@ -153,17 +97,6 @@ npm install
 npm run dev
 ```
 
----
-
-## Environment Variables
-
-```env
-PORT=5000
-DATABASE_URL=your_database_url
-```
-
-
-
 ## Author
 
-Karthik
+Penta Karthik — [GitHub](https://github.com/karthiknani229-art)
